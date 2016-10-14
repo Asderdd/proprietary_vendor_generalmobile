@@ -84,14 +84,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/google/shamrock/proprietary/etc/firmware/DE.o.msm8952:system/etc/firmware/DE.o.msm8952 \
     vendor/google/shamrock/proprietary/etc/firmware/DE.o.msm8976:system/etc/firmware/DE.o.msm8976 \
-    vendor/google/shamrock/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/google/shamrock/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/google/shamrock/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/google/shamrock/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/google/shamrock/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
-    vendor/google/shamrock/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/google/shamrock/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/google/shamrock/proprietary/lib/hw/audio.primary.msm8952.so:system/lib/hw/audio.primary.msm8952.so \
     vendor/google/shamrock/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     vendor/google/shamrock/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/google/shamrock/proprietary/lib/hw/lights.msm8952.so:system/lib/hw/lights.msm8952.so \
@@ -105,9 +102,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/google/shamrock/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/google/shamrock/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
+    vendor/google/shamrock/proprietary/lib/libOmxCore.so:system/lib/libOmxCore.so \
+    vendor/google/shamrock/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
     vendor/google/shamrock/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/google/shamrock/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
+    vendor/google/shamrock/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
+    vendor/google/shamrock/proprietary/qcril/qcril.db:system/qcril/qcril.db \
     vendor/google/shamrock/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
-    vendor/google/shamrock/proprietary/vendor/bin/hvdcp_opti:system/vendor/bin/hvdcp_opti \
     vendor/google/shamrock/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/google/shamrock/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/google/shamrock/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
@@ -627,8 +628,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/google/shamrock/proprietary/vendor/lib/libloc_xtra.so:system/vendor/lib/libloc_xtra.so \
     vendor/google/shamrock/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
-    vendor/google/shamrock/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
-    vendor/google/shamrock/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
     vendor/google/shamrock/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
@@ -747,9 +746,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
     vendor/google/shamrock/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOmxApeDec.so:system/vendor/lib/libOmxApeDec.so \
     vendor/google/shamrock/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/google/shamrock/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/google/shamrock/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
@@ -785,15 +782,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/google/shamrock/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/google/shamrock/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/google/shamrock/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/google/shamrock/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/google/shamrock/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/google/shamrock/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/google/shamrock/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/google/shamrock/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/google/shamrock/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/google/shamrock/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
@@ -806,8 +799,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
     vendor/google/shamrock/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/google/shamrock/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    vendor/google/shamrock/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/google/shamrock/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/google/shamrock/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
     libtime_genoff
