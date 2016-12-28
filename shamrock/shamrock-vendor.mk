@@ -102,8 +102,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/google/shamrock/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/google/shamrock/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
-    vendor/google/shamrock/proprietary/lib/libOmxCore.so:system/lib/libOmxCore.so \
-    vendor/google/shamrock/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
     vendor/google/shamrock/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/google/shamrock/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/google/shamrock/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
