@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,6 +29,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/google/shamrock/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/google/shamrock/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_General_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_General_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Global_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Global_cal.acdb \
@@ -43,20 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb:system/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb:system/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb:system/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb \
-    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/QRD/QRD_General_cal.acdb:system/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/QRD/QRD_Global_cal.acdb:system/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -64,6 +57,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:system/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/QRD/QRD_Headset_cal.acdb:system/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:system/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb \
+    vendor/google/shamrock/proprietary/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb:system/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_Bluetooth_cal.acdb:system/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_Bluetooth_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_General_cal.acdb:system/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_General_cal.acdb \
     vendor/google/shamrock/proprietary/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_Global_cal.acdb:system/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_Global_cal.acdb \
@@ -74,6 +74,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/google/shamrock/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/google/shamrock/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/google/shamrock/proprietary/etc/firmware/DE.o.msm8952:system/etc/firmware/DE.o.msm8952 \
+    vendor/google/shamrock/proprietary/etc/firmware/DE.o.msm8976:system/etc/firmware/DE.o.msm8976 \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
@@ -82,26 +84,24 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/google/shamrock/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/google/shamrock/proprietary/etc/firmware/DE.o.msm8952:system/etc/firmware/DE.o.msm8952 \
-    vendor/google/shamrock/proprietary/etc/firmware/DE.o.msm8976:system/etc/firmware/DE.o.msm8976 \
+    vendor/google/shamrock/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/google/shamrock/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/google/shamrock/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/google/shamrock/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/google/shamrock/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/google/shamrock/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/google/shamrock/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     vendor/google/shamrock/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/google/shamrock/proprietary/lib/hw/lights.msm8952.so:system/lib/hw/lights.msm8952.so \
+    vendor/google/shamrock/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
     vendor/google/shamrock/proprietary/lib/libcryptfs_hw.so:system/lib/libcryptfs_hw.so \
     vendor/google/shamrock/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/google/shamrock/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/google/shamrock/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/google/shamrock/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/google/shamrock/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/google/shamrock/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/google/shamrock/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/google/shamrock/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/google/shamrock/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-    vendor/google/shamrock/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
     vendor/google/shamrock/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/google/shamrock/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/google/shamrock/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
@@ -111,11 +111,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/google/shamrock/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/google/shamrock/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/google/shamrock/proprietary/vendor/etc/cne/andsfCne.xml:system/vendor/etc/cne/andsfCne.xml \
     vendor/google/shamrock/proprietary/vendor/etc/cne/SwimConfig.xml:system/vendor/etc/cne/SwimConfig.xml \
-    vendor/google/shamrock/proprietary/vendor/firmware/a225p5_pm4.fw:system/vendor/firmware/a225p5_pm4.fw \
+    vendor/google/shamrock/proprietary/vendor/etc/cne/andsfCne.xml:system/vendor/etc/cne/andsfCne.xml \
     vendor/google/shamrock/proprietary/vendor/firmware/a225_pfp.fw:system/vendor/firmware/a225_pfp.fw \
     vendor/google/shamrock/proprietary/vendor/firmware/a225_pm4.fw:system/vendor/firmware/a225_pm4.fw \
+    vendor/google/shamrock/proprietary/vendor/firmware/a225p5_pm4.fw:system/vendor/firmware/a225p5_pm4.fw \
     vendor/google/shamrock/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
     vendor/google/shamrock/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
     vendor/google/shamrock/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
@@ -126,13 +126,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/firmware/a530_pm4.fw:system/vendor/firmware/a530_pm4.fw \
     vendor/google/shamrock/proprietary/vendor/firmware/leia_pfp_470.fw:system/vendor/firmware/leia_pfp_470.fw \
     vendor/google/shamrock/proprietary/vendor/firmware/leia_pm4_470.fw:system/vendor/firmware/leia_pm4_470.fw \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.b03:system/vendor/firmware/venus.b03 \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.b04:system/vendor/firmware/venus.b04 \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
-    vendor/google/shamrock/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
     vendor/google/shamrock/proprietary/vendor/firmware/venus-v1.b00:system/vendor/firmware/venus-v1.b00 \
     vendor/google/shamrock/proprietary/vendor/firmware/venus-v1.b01:system/vendor/firmware/venus-v1.b01 \
     vendor/google/shamrock/proprietary/vendor/firmware/venus-v1.b02:system/vendor/firmware/venus-v1.b02 \
@@ -140,17 +133,39 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/firmware/venus-v1.b04:system/vendor/firmware/venus-v1.b04 \
     vendor/google/shamrock/proprietary/vendor/firmware/venus-v1.mbn:system/vendor/firmware/venus-v1.mbn \
     vendor/google/shamrock/proprietary/vendor/firmware/venus-v1.mdt:system/vendor/firmware/venus-v1.mdt \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.b03:system/vendor/firmware/venus.b03 \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.b04:system/vendor/firmware/venus.b04 \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
+    vendor/google/shamrock/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
     vendor/google/shamrock/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/google/shamrock/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/google/shamrock/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/google/shamrock/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/google/shamrock/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/google/shamrock/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/google/shamrock/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
-    vendor/google/shamrock/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/google/shamrock/proprietary/vendor/lib/hw/activity_recognition.msm8952.so:system/vendor/lib/hw/activity_recognition.msm8952.so \
     vendor/google/shamrock/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/google/shamrock/proprietary/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
     vendor/google/shamrock/proprietary/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so \
+    vendor/google/shamrock/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/google/shamrock/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/google/shamrock/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/google/shamrock/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/google/shamrock/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -159,8 +174,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_bu64244gwz.so:system/vendor/lib/libactuator_bu64244gwz.so \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_bu64291.so:system/vendor/lib/libactuator_bu64291.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libactuator_bu64297_s5k3l2_olqba28.so:system/vendor/lib/libactuator_bu64297_s5k3l2_olqba28.so \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_bu64297.so:system/vendor/lib/libactuator_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libactuator_bu64297_s5k3l2_olqba28.so:system/vendor/lib/libactuator_bu64297_s5k3l2_olqba28.so \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
     vendor/google/shamrock/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
@@ -175,10 +190,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/google/shamrock/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/google/shamrock/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/google/shamrock/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/google/shamrock/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_csidtg_common.so:system/vendor/lib/libchromatix_csidtg_common.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:system/vendor/lib/libchromatix_csidtg_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:system/vendor/lib/libchromatix_csidtg_postproc.so \
@@ -191,24 +204,24 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx214_cpp_hfr_90.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_liveshot.so:system/vendor/lib/libchromatix_imx214_cpp_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_preview.so:system/vendor/lib/libchromatix_imx214_cpp_preview.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_cpp_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_snapshot.so:system/vendor/lib/libchromatix_imx214_cpp_snapshot.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx214_cpp_video_hdr.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_cpp_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_video.so:system/vendor/lib/libchromatix_imx214_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx214_cpp_video_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_default_preview_lc898122.so:system/vendor/lib/libchromatix_imx214_default_preview_lc898122.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_default_video_lc898122.so:system/vendor/lib/libchromatix_imx214_default_video_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_120_lc898122.so:system/vendor/lib/libchromatix_imx214_hfr_120_lc898122.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_default_video_lc898122.so:system/vendor/lib/libchromatix_imx214_default_video_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_120.so:system/vendor/lib/libchromatix_imx214_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_60_lc898122.so:system/vendor/lib/libchromatix_imx214_hfr_60_lc898122.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_120_lc898122.so:system/vendor/lib/libchromatix_imx214_hfr_120_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_60.so:system/vendor/lib/libchromatix_imx214_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_90_lc898122.so:system/vendor/lib/libchromatix_imx214_hfr_90_lc898122.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_60_lc898122.so:system/vendor/lib/libchromatix_imx214_hfr_60_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_90.so:system/vendor/lib/libchromatix_imx214_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_hfr_90_lc898122.so:system/vendor/lib/libchromatix_imx214_hfr_90_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:system/vendor/lib/libchromatix_imx214_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_postproc.so:system/vendor/lib/libchromatix_imx214_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/vendor/lib/libchromatix_imx214_preview.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:system/vendor/lib/libchromatix_imx214_video_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_zsl_preview_lc898122.so:system/vendor/lib/libchromatix_imx214_zsl_preview_lc898122.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx214_zsl_video_lc898122.so:system/vendor/lib/libchromatix_imx214_zsl_video_lc898122.so \
@@ -223,29 +236,29 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx230_cpp_hfr_90.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_liveshot.so:system/vendor/lib/libchromatix_imx230_cpp_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_preview.so:system/vendor/lib/libchromatix_imx230_cpp_preview.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot_hdr.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_video.so:system/vendor/lib/libchromatix_imx230_cpp_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_video_4k.so:system/vendor/lib/libchromatix_imx230_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx230_cpp_video_hdr.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_cpp_video.so:system/vendor/lib/libchromatix_imx230_cpp_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_default_preview_lc898212xd.so:system/vendor/lib/libchromatix_imx230_default_preview_lc898212xd.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_default_video_lc898212xd.so:system/vendor/lib/libchromatix_imx230_default_video_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_default_video.so:system/vendor/lib/libchromatix_imx230_default_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_default_video_lc898212xd.so:system/vendor/lib/libchromatix_imx230_default_video_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hdr_snapshot_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hdr_snapshot_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hdr_video_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hdr_video_lc898212xd.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_120_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_120_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_120.so:system/vendor/lib/libchromatix_imx230_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_240_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_240_lc898212xd.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_120_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_120_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_240.so:system/vendor/lib/libchromatix_imx230_hfr_240.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_60_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_60_lc898212xd.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_240_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_240_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_60.so:system/vendor/lib/libchromatix_imx230_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_90_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_90_lc898212xd.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_60_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_60_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_90.so:system/vendor/lib/libchromatix_imx230_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_hfr_90_lc898212xd.so:system/vendor/lib/libchromatix_imx230_hfr_90_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_liveshot.so:system/vendor/lib/libchromatix_imx230_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_postproc.so:system/vendor/lib/libchromatix_imx230_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_preview.so:system/vendor/lib/libchromatix_imx230_preview.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_snapshot_hdr.so:system/vendor/lib/libchromatix_imx230_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_snapshot.so:system/vendor/lib/libchromatix_imx230_snapshot.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_snapshot_hdr.so:system/vendor/lib/libchromatix_imx230_snapshot_hdr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_video_16M_lc898212xd.so:system/vendor/lib/libchromatix_imx230_video_16M_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_video_4k.so:system/vendor/lib/libchromatix_imx230_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx230_video_hdr.so:system/vendor/lib/libchromatix_imx230_video_hdr.so \
@@ -260,17 +273,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_cpp_liveshot.so:system/vendor/lib/libchromatix_imx258_cpp_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_cpp_preview.so:system/vendor/lib/libchromatix_imx258_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_cpp_snapshot.so:system/vendor/lib/libchromatix_imx258_cpp_snapshot.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_cpp_video.so:system/vendor/lib/libchromatix_imx258_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_default_preview_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_default_preview_bu64244gwz.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_default_video_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_default_video_bu64244gwz.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_default_video.so:system/vendor/lib/libchromatix_imx258_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_120_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_120_bu64244gwz.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_default_video_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_default_video_bu64244gwz.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_120.so:system/vendor/lib/libchromatix_imx258_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_60_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_60_bu64244gwz.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_120_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_120_bu64244gwz.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_60.so:system/vendor/lib/libchromatix_imx258_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_90_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_90_bu64244gwz.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_60_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_60_bu64244gwz.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_90.so:system/vendor/lib/libchromatix_imx258_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_hfr_90_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_90_bu64244gwz.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_liveshot.so:system/vendor/lib/libchromatix_imx258_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_a3_4k_preview_dw9800w.so:system/vendor/lib/libchromatix_imx258_olqbp03_a3_4k_preview_dw9800w.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_a3_4k_video_dw9800w.so:system/vendor/lib/libchromatix_imx258_olqbp03_a3_4k_video_dw9800w.so \
@@ -288,8 +301,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_cpp_liveshot.so:system/vendor/lib/libchromatix_imx258_olqbp03_cpp_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_cpp_preview.so:system/vendor/lib/libchromatix_imx258_olqbp03_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_cpp_snapshot.so:system/vendor/lib/libchromatix_imx258_olqbp03_cpp_snapshot.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_olqbp03_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_cpp_video.so:system/vendor/lib/libchromatix_imx258_olqbp03_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_olqbp03_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_default_video.so:system/vendor/lib/libchromatix_imx258_olqbp03_default_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_hfr_120.so:system/vendor/lib/libchromatix_imx258_olqbp03_hfr_120.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_imx258_olqbp03_hfr_60.so:system/vendor/lib/libchromatix_imx258_olqbp03_hfr_60.so \
@@ -314,17 +327,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_cpp_preview.so:system/vendor/lib/libchromatix_ov13850_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13850_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov13850_cpp_us_chromatix.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_cpp_video_full.so:system/vendor/lib/libchromatix_ov13850_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_cpp_video.so:system/vendor/lib/libchromatix_ov13850_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_cpp_video_full.so:system/vendor/lib/libchromatix_ov13850_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_default_preview_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_default_preview_lc898212xd.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_default_video_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_default_video_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_default_video.so:system/vendor/lib/libchromatix_ov13850_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_120_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_hfr_120_lc898212xd.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_default_video_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_default_video_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_120.so:system/vendor/lib/libchromatix_ov13850_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_60_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_hfr_60_lc898212xd.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_120_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_hfr_120_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_60.so:system/vendor/lib/libchromatix_ov13850_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_90_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_hfr_90_lc898212xd.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_60_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_hfr_60_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_90.so:system/vendor/lib/libchromatix_ov13850_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_hfr_90_lc898212xd.so:system/vendor/lib/libchromatix_ov13850_hfr_90_lc898212xd.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_liveshot.so:system/vendor/lib/libchromatix_ov13850_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_common.so:system/vendor/lib/libchromatix_ov13850_polaris_common.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_ds_chromatix.so \
@@ -335,17 +348,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_preview.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_us_chromatix.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_video_full.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_video.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_cpp_video_full.so:system/vendor/lib/libchromatix_ov13850_polaris_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_default_preview_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_default_preview_bu64297.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_default_video_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_default_video_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_default_video.so:system/vendor/lib/libchromatix_ov13850_polaris_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_120_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_120_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_default_video_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_default_video_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_120.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_60_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_60_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_120_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_120_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_60.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_90_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_90_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_60_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_60_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_90.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_hfr_90_bu64297.so:system/vendor/lib/libchromatix_ov13850_polaris_hfr_90_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_liveshot.so:system/vendor/lib/libchromatix_ov13850_polaris_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_postproc.so:system/vendor/lib/libchromatix_ov13850_polaris_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_polaris_preview.so:system/vendor/lib/libchromatix_ov13850_polaris_preview.so \
@@ -364,17 +377,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_cpp_preview.so:system/vendor/lib/libchromatix_ov13850_q13v06k_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13850_q13v06k_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov13850_q13v06k_cpp_us_chromatix.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_cpp_video_full.so:system/vendor/lib/libchromatix_ov13850_q13v06k_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_cpp_video.so:system/vendor/lib/libchromatix_ov13850_q13v06k_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_cpp_video_full.so:system/vendor/lib/libchromatix_ov13850_q13v06k_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_default_preview_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_default_preview_bu64297.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_default_video_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_default_video_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_default_video.so:system/vendor/lib/libchromatix_ov13850_q13v06k_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_default_video_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_default_video_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90_bu64297.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90_bu64297.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90_bu64297.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_liveshot.so:system/vendor/lib/libchromatix_ov13850_q13v06k_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_postproc.so:system/vendor/lib/libchromatix_ov13850_q13v06k_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_preview.so:system/vendor/lib/libchromatix_ov13850_q13v06k_preview.so \
@@ -395,12 +408,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_cpp_snapshot.so:system/vendor/lib/libchromatix_ov4688_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_cpp_video.so:system/vendor/lib/libchromatix_ov4688_cpp_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_default_video.so:system/vendor/lib/libchromatix_ov4688_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_120_ad5823.so:system/vendor/lib/libchromatix_ov4688_hfr_120_ad5823.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_120.so:system/vendor/lib/libchromatix_ov4688_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_60_ad5823.so:system/vendor/lib/libchromatix_ov4688_hfr_60_ad5823.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_120_ad5823.so:system/vendor/lib/libchromatix_ov4688_hfr_120_ad5823.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_60.so:system/vendor/lib/libchromatix_ov4688_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_90_ad5823.so:system/vendor/lib/libchromatix_ov4688_hfr_90_ad5823.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_60_ad5823.so:system/vendor/lib/libchromatix_ov4688_hfr_60_ad5823.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_90.so:system/vendor/lib/libchromatix_ov4688_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_hfr_90_ad5823.so:system/vendor/lib/libchromatix_ov4688_hfr_90_ad5823.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_postproc.so:system/vendor/lib/libchromatix_ov4688_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_preview.so:system/vendor/lib/libchromatix_ov4688_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov4688_snapshot.so:system/vendor/lib/libchromatix_ov4688_snapshot.so \
@@ -420,8 +433,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_cpp_preview.so:system/vendor/lib/libchromatix_ov5670_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_cpp_snapshot.so:system/vendor/lib/libchromatix_ov5670_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov5670_cpp_us_chromatix.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_cpp_video_full.so:system/vendor/lib/libchromatix_ov5670_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_cpp_video.so:system/vendor/lib/libchromatix_ov5670_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_cpp_video_full.so:system/vendor/lib/libchromatix_ov5670_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_default_video.so:system/vendor/lib/libchromatix_ov5670_default_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_hfr_120.so:system/vendor/lib/libchromatix_ov5670_hfr_120.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_hfr_60.so:system/vendor/lib/libchromatix_ov5670_hfr_60.so \
@@ -441,8 +454,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_cpp_preview.so:system/vendor/lib/libchromatix_ov5670_polaris_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_cpp_snapshot.so:system/vendor/lib/libchromatix_ov5670_polaris_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov5670_polaris_cpp_us_chromatix.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_cpp_video_full.so:system/vendor/lib/libchromatix_ov5670_polaris_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_cpp_video.so:system/vendor/lib/libchromatix_ov5670_polaris_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_cpp_video_full.so:system/vendor/lib/libchromatix_ov5670_polaris_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_default_video.so:system/vendor/lib/libchromatix_ov5670_polaris_default_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_hfr_120.so:system/vendor/lib/libchromatix_ov5670_polaris_hfr_120.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov5670_polaris_hfr_60.so:system/vendor/lib/libchromatix_ov5670_polaris_hfr_60.so \
@@ -494,17 +507,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_cpp_preview.so:system/vendor/lib/libchromatix_ov8865_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_cpp_snapshot.so:system/vendor/lib/libchromatix_ov8865_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov8865_cpp_us_chromatix.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_cpp_video_full.so:system/vendor/lib/libchromatix_ov8865_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_cpp_video.so:system/vendor/lib/libchromatix_ov8865_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_cpp_video_full.so:system/vendor/lib/libchromatix_ov8865_cpp_video_full.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_default_preview_dw9714.so:system/vendor/lib/libchromatix_ov8865_default_preview_dw9714.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_default_video_dw9714.so:system/vendor/lib/libchromatix_ov8865_default_video_dw9714.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_default_video.so:system/vendor/lib/libchromatix_ov8865_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_120_dw9714.so:system/vendor/lib/libchromatix_ov8865_hfr_120_dw9714.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_default_video_dw9714.so:system/vendor/lib/libchromatix_ov8865_default_video_dw9714.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_120.so:system/vendor/lib/libchromatix_ov8865_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_60_dw9714.so:system/vendor/lib/libchromatix_ov8865_hfr_60_dw9714.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_120_dw9714.so:system/vendor/lib/libchromatix_ov8865_hfr_120_dw9714.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_60.so:system/vendor/lib/libchromatix_ov8865_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_90_dw9714.so:system/vendor/lib/libchromatix_ov8865_hfr_90_dw9714.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_60_dw9714.so:system/vendor/lib/libchromatix_ov8865_hfr_60_dw9714.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_90.so:system/vendor/lib/libchromatix_ov8865_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_hfr_90_dw9714.so:system/vendor/lib/libchromatix_ov8865_hfr_90_dw9714.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_liveshot.so:system/vendor/lib/libchromatix_ov8865_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_postproc.so:system/vendor/lib/libchromatix_ov8865_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_ov8865_preview.so:system/vendor/lib/libchromatix_ov8865_preview.so \
@@ -530,8 +543,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_preview.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_snapshot.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_video.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_default_video.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_default_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_hfr_120.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_hfr_120.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3l2_olqba28_hfr_60.so:system/vendor/lib/libchromatix_s5k3l2_olqba28_hfr_60.so \
@@ -550,14 +563,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3m2xm_cpp_snapshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_cpp_video.so:system/vendor/lib/libchromatix_s5k3m2xm_cpp_video.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_default_preview_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_default_preview_dw9761b.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_default_video_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_default_video_dw9761b.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_default_video.so:system/vendor/lib/libchromatix_s5k3m2xm_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_120_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_120_dw9761b.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_default_video_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_default_video_dw9761b.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_120.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_60_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_60_dw9761b.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_120_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_120_dw9761b.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_60.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_90_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_90_dw9761b.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_60_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_60_dw9761b.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_90.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_90_dw9761b.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_90_dw9761b.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_liveshot.so:system/vendor/lib/libchromatix_s5k3m2xm_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_postproc.so:system/vendor/lib/libchromatix_s5k3m2xm_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xm_preview.so:system/vendor/lib/libchromatix_s5k3m2xm_preview.so \
@@ -575,17 +588,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_preview.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_preview.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_video.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_video.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_default_preview_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_default_preview_ad5816g.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_default_video_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_default_video_ad5816g.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_default_video.so:system/vendor/lib/libchromatix_s5k3m2xx_default_video.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_120_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_120_ad5816g.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_default_video_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_default_video_ad5816g.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_120.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_120.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_60_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_60_ad5816g.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_120_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_120_ad5816g.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_60.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_60.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_90_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_90_ad5816g.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_60_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_60_ad5816g.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_90.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_90.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_hfr_90_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_hfr_90_ad5816g.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_liveshot.so:system/vendor/lib/libchromatix_s5k3m2xx_liveshot.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_postproc.so:system/vendor/lib/libchromatix_s5k3m2xx_postproc.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_preview.so:system/vendor/lib/libchromatix_s5k3m2xx_preview.so \
@@ -593,10 +606,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_video_4k.so:system/vendor/lib/libchromatix_s5k3m2xx_video_4k.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_zsl_preview_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_zsl_preview_ad5816g.so \
     vendor/google/shamrock/proprietary/vendor/lib/libchromatix_s5k3m2xx_zsl_video_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_zsl_video_ad5816g.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/google/shamrock/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/google/shamrock/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/google/shamrock/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/google/shamrock/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/google/shamrock/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/google/shamrock/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
@@ -612,10 +625,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/google/shamrock/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/google/shamrock/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/google/shamrock/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/google/shamrock/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
-    vendor/google/shamrock/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
     vendor/google/shamrock/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/google/shamrock/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/google/shamrock/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
@@ -623,21 +634,25 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/google/shamrock/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/google/shamrock/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/google/shamrock/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
-    vendor/google/shamrock/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/google/shamrock/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/google/shamrock/proprietary/vendor/lib/libloc_xtra.so:system/vendor/lib/libloc_xtra.so \
+    vendor/google/shamrock/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/google/shamrock/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/google/shamrock/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/google/shamrock/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmm-dspp-utils.so:system/vendor/lib/libmm-dspp-utils.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmm-qdcm-diag.so:system/vendor/lib/libmm-qdcm-diag.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_mct.so:system/vendor/lib/libmmcamera2_mct.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:system/vendor/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
@@ -660,10 +675,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx230.so:system/vendor/lib/libmmcamera_imx230.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so:system/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_olqbp03_gt24c64_eeprom.so:system/vendor/lib/libmmcamera_imx258_olqbp03_gt24c64_eeprom.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_olqbp03.so:system/vendor/lib/libmmcamera_imx258_olqbp03.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258.so:system/vendor/lib/libmmcamera_imx258.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so:system/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_olqbp03.so:system/vendor/lib/libmmcamera_imx258_olqbp03.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_olqbp03_gt24c64_eeprom.so:system/vendor/lib/libmmcamera_imx258_olqbp03_gt24c64_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_imx258_sp.so:system/vendor/lib/libmmcamera_imx258_sp.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_isp_abf40.so:system/vendor/lib/libmmcamera_isp_abf40.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:system/vendor/lib/libmmcamera_isp_bcc40.so \
@@ -703,29 +718,29 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov13850_polaris.so:system/vendor/lib/libmmcamera_ov13850_polaris.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov13850_q13v06k.so:system/vendor/lib/libmmcamera_ov13850_q13v06k.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov2685_scv3b4035.so:system/vendor/lib/libmmcamera_ov2685_scv3b4035.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov2685.so:system/vendor/lib/libmmcamera_ov2685.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov4688_eeprom.so:system/vendor/lib/libmmcamera_ov4688_eeprom.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov2685_scv3b4035.so:system/vendor/lib/libmmcamera_ov2685_scv3b4035.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov4688.so:system/vendor/lib/libmmcamera_ov4688.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov4688_eeprom.so:system/vendor/lib/libmmcamera_ov4688_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov5670_polaris.so:system/vendor/lib/libmmcamera_ov5670_polaris.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov5670.so:system/vendor/lib/libmmcamera_ov5670.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov5670_polaris.so:system/vendor/lib/libmmcamera_ov5670_polaris.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov5670_sp.so:system/vendor/lib/libmmcamera_ov5670_sp.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ov8865.so:system/vendor/lib/libmmcamera_ov8865.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3l2_olqba28_gt24c16_eeprom.so:system/vendor/lib/libmmcamera_s5k3l2_olqba28_gt24c16_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3l2_olqba28.so:system/vendor/lib/libmmcamera_s5k3l2_olqba28.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3m2xm_flipmirror.so:system/vendor/lib/libmmcamera_s5k3m2xm_flipmirror.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3l2_olqba28_gt24c16_eeprom.so:system/vendor/lib/libmmcamera_s5k3l2_olqba28_gt24c16_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:system/vendor/lib/libmmcamera_s5k3m2xm.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3m2xm_flipmirror.so:system/vendor/lib/libmmcamera_s5k3m2xm_flipmirror.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_s5k3m2xx.so:system/vendor/lib/libmmcamera_s5k3m2xx.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_sony_imx214_eeprom.so:system/vendor/lib/libmmcamera_sony_imx214_eeprom.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:system/vendor/lib/libmmcamera_sunny_8865_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
@@ -733,27 +748,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_truly_cma481_eeprom.so:system/vendor/lib/libmmcamera_truly_cma481_eeprom.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmm-dspp-utils.so:system/vendor/lib/libmm-dspp-utils.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmm-qdcm-diag.so:system/vendor/lib/libmm-qdcm-diag.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/google/shamrock/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/google/shamrock/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/google/shamrock/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/google/shamrock/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
@@ -761,22 +768,16 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/google/shamrock/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/google/shamrock/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/google/shamrock/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/google/shamrock/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    vendor/google/shamrock/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/google/shamrock/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/google/shamrock/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/google/shamrock/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    vendor/google/shamrock/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
     vendor/google/shamrock/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
     vendor/google/shamrock/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
     vendor/google/shamrock/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
@@ -786,19 +787,18 @@ PRODUCT_COPY_FILES += \
     vendor/google/shamrock/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/google/shamrock/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/google/shamrock/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/google/shamrock/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/google/shamrock/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/google/shamrock/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/google/shamrock/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/google/shamrock/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/google/shamrock/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/google/shamrock/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
+    vendor/google/shamrock/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/google/shamrock/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
     vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libpanorama_skel.so:system/vendor/lib/rfsa/adsp/libpanorama_skel.so \
     vendor/google/shamrock/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
